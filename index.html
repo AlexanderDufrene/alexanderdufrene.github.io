@@ -73,6 +73,8 @@
     </head>
     
     <body>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
         <div id="all-contents"> 
             <nav>
                 <header>Alex's Domain</header>
@@ -88,7 +90,7 @@
          <main>
         <div class="sidebar">
                 <div>
-            <img src="http://1.bp.blogspot.com/-UMrnwtcBT6w/Uj5Qb9rhQUI/AAAAAAABifo/hx5n95u9nzU/s1600/376095__safe_solo_pinkie+pie_animated_vector_tongue_dance_artist-colon-jailbait_evil+enchantress_spitty+pie_artist-colon-faroffpromise.gif" >
+            <img src="http://i.stack.imgur.com/vT8DJ.gif" >
         </div>
         </div>
         
@@ -104,8 +106,8 @@
                     <li> Videogames </li>
                 </ul>
             </section>
-        </div
-        ><div class="content">
+        </div>
+        <div class="content">
             <header> A little bit about me: </header>
             <section class="interests">
                 <ul>
@@ -113,6 +115,26 @@
                 </ul>
             </section>
         </div>
+        <div class="content">
+            <header> Professional Interests </header>
+            <section class="interests">
+            <button>Where'd they go?</button>
+<div id="bodyParagraph" style="display:none">
+                <ul>
+                    <li> Learning how to use and work with Adobe Suite. </li>
+                    <li> Working with different programs such as Pivot Animator. </li>
+                    <li> Exploring new routes to make things work, whether those things be digital or in reality. </li>
+                </ul>
+            </section>
+        </div>
+        </div>
     </main>
     </body>
+    <script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $("#bodyParagraph").fadeIn()
+    });
+});
+</script>
 </html>
