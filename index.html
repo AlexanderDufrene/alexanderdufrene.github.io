@@ -133,8 +133,17 @@
     </body>
     <script>
 $(document).ready(function(){
+    var opened = 1;
     $("button").click(function(){
-        $("#bodyParagraph").fadeIn()
+        $("#bodyParagraph").slideToggle()
+        if (opened % 2 == 0) {
+                    $("button").text("Where'd they go?")
+
+        } else {
+                    $("button").text("Oh, here they are.")
+
+        }
+        opened = opened + 1;
     });
 });
 </script>
