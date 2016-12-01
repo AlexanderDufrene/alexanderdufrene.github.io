@@ -19,11 +19,10 @@
     Once the hud has been created you can update by using the 
     following junctions:
 
-    hud.updateScore(score) - change the current score
-    hud.updateOf(maxScore) - change the display to indicate a maximum score
-    hud.setIntegrity(value) - update the integrity meter. value should be 
-                              between [0,100]
-    hud.kill() - special animation for the integrity meter when it reaches zero
+    hud.updateScore(score)
+    hud.updateOf(maxScore)
+    hud.setIntegrity(value)
+    hud.kill()
      */
     window.opspark.makeHud = function () {
         var hud, background, score, of, txtScore, integrity, integrityMeter;

@@ -30,10 +30,13 @@
             background.removeAllChildren();
 
             // TODO: 3 - YOUR DRAW CODE GOES HERE
-
+            var shape = draw.circle(90, 'red', 'blue', 20);
+            background.addChild(shape);
+            shape.x = 100;
+            shape.y = 45;
             // this fills the background with a obnoxious yellow
             // you should modify this to suit your game
-            var backgroundFill = draw.rect(canvasWidth,canvasHeight,'yellow');
+            var backgroundFill = draw.rect(canvasWidth,canvasHeight,'pink');
             background.addChild(backgroundFill);
         }
         
