@@ -18,6 +18,7 @@
 
         // container which will be returned
         var background;
+        var backgroundBox;
         
         // add objects for display inb ackground
         // called at the start of game and whenever the page is resized
@@ -26,18 +27,23 @@
             var canvasWidth = app.canvas.width;
             var canvasHeight = app.canvas.height;
             var groundY = ground.y;
-
+            
             background.removeAllChildren();
 
             // TODO: 3 - YOUR DRAW CODE GOES HERE
-            var shape = draw.circle(90, 'red', 'blue', 20);
-            background.addChild(shape);
-            shape.x = 100;
-            shape.y = 45;
+            
             // this fills the background with a obnoxious yellow
             // you should modify this to suit your game
             var backgroundFill = draw.rect(canvasWidth,canvasHeight,'pink');
             background.addChild(backgroundFill);
+            var sun = draw.circle(110, 'yellow', 'yellow', 20);
+            background.addChild(sun);
+            sun.x = 100;
+            sun.y = 45;
+            backgroundBox = draw.rect(100,100,'Blue');
+            backgroundBox.x = 400;
+            backgroundBox.y = 2250;
+            background.addChild(backgroundBox);
         }
         
         // Perform background animation
