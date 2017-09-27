@@ -1,0 +1,151 @@
+<!DOCTYPE HTML>
+<html>
+    <head> 
+    <style>
+    /*Text Color*/
+            body {
+                background: rgb(0, 0, 0);
+                color: rgb(45, 45, 45);
+                padding: 10px;
+                font-family: arial;
+            }
+            header {
+                font-size: 1.5em;
+                font-weight: bold;
+            }
+            [id=all-contents] {
+                max-width: 800px;
+                margin: auto;
+            }
+    
+            /* navigation menu */
+            nav {
+                background: rgb(125, 198, 205);
+                margin: 0 auto;
+                margin-bottom:20px;
+                display: flex;
+                padding: 10px;
+                border: 2px solid;
+                border-radius: 25px;
+            }
+            nav header {
+                display: flex;
+                align-items: center;
+                color: rgb(255, 255, 255);
+                flex: 1;
+            }
+            nav ul {
+                list-style-image: none;
+            }
+            nav li {
+                display: inline-block;
+                padding: 0 10px;
+            }
+            nav a {
+                text-decoration: none;
+                color: #fff;
+            }
+    
+            /* main container area beneath menu */
+            main {
+                background: rgb(125, 198, 205);
+                display: flex;
+            }
+            [class=sidebar] {
+                margin-right: 25px;
+                padding: 10px;
+            }
+            [class=sidebar] img {
+                width: 200px;
+            }
+            [class=content] {
+                flex: 1;
+                padding: 15px;
+            }
+            [class=interests] header {
+                font-size: 1.25em;
+            }
+            body {
+                background-image: url("http://wallpoper.com/images/00/37/80/10/pattern_00378010.jpg");
+            }
+        </style>
+        <title>This is my Domain</title>
+    </head>
+    
+    <body>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+        <div id="all-contents"> 
+            <nav>
+                <header>Alex's Domain</header>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    
+                </ul>
+            </nav>
+            
+            <main>
+            </main>
+        </div>
+         <main>
+        <div class="sidebar">
+                <div>
+            <img src="http://i.stack.imgur.com/vT8DJ.gif" >
+        </div>
+        </div>
+        
+        <div class="content">
+            <header> Alexander Dufrene </header>
+            <p> Student at the NET Charter HS and Operation Spark </p>
+            <section class="interests">
+                <header> My Interests</header>
+                <ul>
+                    <li> My Little Pony (Shocker, I know) </li>
+                    <li> The Internet in all its entirety </li>
+                    <li> Starting my own religion </li>
+                    <li> Videogames </li>
+                    <li> Writing stories (You can find a demo <a href="/Americah/americahHome.html">here</a>)</li>
+                </ul>
+            </section>
+        </div>
+        <div class="content">
+            <header> A little bit about me: </header>
+            <section class="interests">
+                <ul>
+                    <li> I'm an odd person. I've always been, at least according to others. I watch a lot of children''s shows (My Little Pony, Steven Universe, Gravity Falls, and the like). I am also fascinated by science. Astronomy to be exact. Well, there you have it. A little about me. I didn't say it would make sense, though.  </li>
+                </ul>
+            </section>
+        </div>
+        <div class="content">
+            <header> Professional Interests </header>
+            <section class="interests">
+            <button>Where'd they go?</button>
+<div id="bodyParagraph" style="display:none">
+                <ul>
+                    <li> Learning how to use and work with Adobe Suite. </li>
+                    <li> Working with different programs such as Pivot Animator. </li>
+                    <li> Exploring new routes to make things work, whether those things be digital or in reality</li>
+                </ul>
+            </section>
+        </div>
+        </div>
+    </main>
+    </body>
+    <script>
+$(document).ready(function(){
+    var opened = 1;
+    $("button").click(function(){
+        $("#bodyParagraph").slideToggle()
+        if (opened % 2 == 0) {
+                    $("button").text("Where'd they go?")
+
+        } else {
+                    $("button").text("Oh, here they are.")
+
+        }
+        opened = opened + 1;
+    });
+});
+</script>
+</html>
